@@ -35,6 +35,19 @@ my_huge_list = [int(i) for i in str(my_huge_num)]
 
 my_huge_result = 0
 
-for range(1,995)
+for index in range(0,995):
+	small_list = my_huge_list[index:index+5]
+	result = 1
+	print index
+	for number in small_list:
+		result = result*number
+	if(result > my_huge_result):
+		my_huge_result = result
+	else:
+		next
+
+print my_huge_result
+
+
 
 
